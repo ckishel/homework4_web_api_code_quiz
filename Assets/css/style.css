@@ -82,7 +82,7 @@ body.wrong{
     justify-content: center;
     align-items: center;
 }
-
+/* questions start hidden - can only see start button */
 .hide{
     display: none;
 }
