@@ -32,11 +32,11 @@ A user clicks through an interactive coding quiz, then enters initials to save t
 
 This shows the quiz start
 
-(./Assets/quiz-start.jpg)
+![This shows the quiz start](./Assets/quiz-start.jpg)
 
 This shows the first question. The beginning question is hidden and there are dynamic changes to the page based on answers.
 
-(./Assets/first-question.jpg)
+![This shows the quiz start](./Assets/first-question.jpg)
 
 The screen changes to red based on a wrong choice. You can see there is a next button.
 
