@@ -28,13 +28,19 @@ THEN I can save my initials and my score
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over. My resulting homework submission is a bit more simplistic, with an interactive coding quiz, without the ability to save a high score or a timer. It is dynamic and has sections that respond dynamically to input. It is responsive to click events and and gets Element by ID. It does not have a timer or save the high score, but displays the functionality of a quiz application using javascript.]
+A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over. My resulting homework submission is a bit more simplistic, with an interactive coding quiz, without the ability to save a high score or a timer. It is dynamic and has sections that respond dynamically to input. It is responsive to click events and and gets Element by ID. It does not have a timer or save the high score, but displays the functionality of a quiz application using javascript.
 
-![This shows the quiz start.](./Assets/quiz-start.jpg)
+This shows the quiz start
 
-![This shows the first question. The beginning question is hidden and there are dynamic changes to the page based on answers.](./Assets/first-question.jpg)
+(./Assets/quiz-start.jpg)
 
-![The screen changes to red based on a wrong choice. You can see there is a next button.](./Assets/wrong-answer.jpg)
+This shows the first question. The beginning question is hidden and there are dynamic changes to the page based on answers.
+
+(./Assets/first-question.jpg)
+
+The screen changes to red based on a wrong choice. You can see there is a next button.
+
+(./Assets/wrong-answer.jpg)
 
 This layout is designed for desktop viewing, but optimized for mobile. 
 
