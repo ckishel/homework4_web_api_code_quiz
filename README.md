@@ -30,15 +30,15 @@ A user clicks through an interactive coding quiz, then enters initials to save t
 
 This shows the quiz start
 
-![screenshot](./Assets/quiz-start.jpg)
+![screenshot](./assets/quiz-start.jpg)
 
 This shows the first question. The beginning question is hidden and there are dynamic changes to the page based on answers.
 
-![screenshot](./Assets/first-question.jpg)
+![screenshot](./assets/first-question.jpg)
 
 The screen changes to red based on a wrong choice. You can see there is a next button.
 
-![screenshot](./Assets/wrong-answer.jpg)
+![screenshot](./assets/wrong-answer.jpg)
 
 This layout is designed for desktop viewing, but optimized for mobile. 
 
