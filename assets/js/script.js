@@ -1,6 +1,6 @@
 // setting a "constant" var to select my start button from html index. This is the question container
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
+const startButton = document.getElementById('start-button')
+const nextButton = document.getElementById('next-button')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -37,7 +37,7 @@ function showQuestion(question){
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
-        button.classList.add('btn')
+        button.classList.add('button')
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
