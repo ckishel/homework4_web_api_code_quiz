@@ -2,7 +2,7 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-const questionnElement = document.getElementById('question')
+const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 // shuffle answers
@@ -16,16 +16,16 @@ setNextQuestion()
 
 // function to start the game.
 function startGame(){
-    console.log('Started')
-    // Function to hide the start button and unhide the questions container and shuffle questions and answers
     startButton.classList.add('hide')
+       // Function to hide the start button and unhide the questions container and shuffle questions and answers
     shuffledQuestions = questions.sort(() => Math.random() -.5)
-    //start questions at beginning, set array = 0
     currentQuestionIndex = 0
+        //start questions at beginning, set array = 0
     questionContainerElement.classList.remove('hide')
-    // Function to set the next question
+        // Function to set the next question
     setNextQuestion()
 }
+
 // function to start the next question and click on the next button
 function setNextQuestion(){
     resetState()
@@ -33,7 +33,7 @@ function setNextQuestion(){
 }
 
 function showQuestion(question){
-    questionnElement.innerText = question.question
+    questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
@@ -47,6 +47,7 @@ function showQuestion(question){
 }
 
 function resetState(){
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -72,15 +73,15 @@ function selectAnswer(e){
 function setStatusClass(element, correct){
     clearStatusClass(element)
     if (correct) {
-        element.classlist.add('correct')
+        element.classList.add('correct')
     } else {
         element.classList.add('wrong')
     }
 }
 
 function clearStatusClass(element){
-    element.classlist.remove('correct')
-    element.classlist.remove('wrong')
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 } 
 
 // create list of questions in an array. First object in array is first question. Second array is the answers
