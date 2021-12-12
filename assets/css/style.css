@@ -18,71 +18,50 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue),100%, 20%);
 }
 
-/* change body background color when correct or wrong */
-body.correct{
-    --hue: var(--hue-correct);
+.wrapper{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
 }
 
-body.wrong{
-    --hue: var(--hue-wrong);
-}
-
-/* Quiz section to place question box in center of page */
-.container{
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
-}
-/* make buttons into a grid */
-.button-grid{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap:10px;
-    margin: 20px 0;
-}
-/* style and space buttons */
-.button{
-    --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%,30%);
-    background-color: hsl(var(--hue), 100%, 50%);
-    border-radius:5px;
-    padding: 5px 10px;
-    color: white;
-    outline:none;
-}
-/* button border color */
-.button:hover{
-    border-color: black;
-}
-/* change button background color when correct or wrong */
-.button.correct{
-    --hue: var(--hue-correct);
-    color: black;
-}
-
-.button.wrong{
-    --hue: var(--hue-wrong);    
-}
-/* start and next */
-
-.start-button, .next-button {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-.controls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* questions start hidden - can only see start button */
 .hide{
     display: none;
 }
+
+.start{
+    text-align: center;
+}
+
+.scores{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.feedback{
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid rgb(201, 193, 193);
+}
+
+.timer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
