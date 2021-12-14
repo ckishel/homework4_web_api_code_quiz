@@ -1,6 +1,6 @@
+
+
 // DOM
-
-
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#time");
 var choicesEl = document.querySelector("#choices");
@@ -28,7 +28,7 @@ function startQuiz() {
     // reveal start time
     timerEl.textContent = time;
 
-    getQuestion()
+    getQuestion();
 }
 
 function getQuestion() {
@@ -45,7 +45,7 @@ function getQuestion() {
     // loop choices
     currentQuestion.choices.forEach(function(choice, i) {
         // new button for each choice
-        var choiceNode = docu.createElement("button");
+        var choiceNode = document.createElement("button");
         choiceNode.setAttribute("class", "choice");
         choiceNode.setAttribute("value", choice);
 
@@ -70,11 +70,11 @@ function questionClick() {
         }
         // time display update
         timerEl.textContent = time;
-        feedbackEl.textContent = "WRONG ANSWER!";
+        feedbackEl.textContent = "Wrong!";
         feedbackEl.style.color = "red";
         feedbackEl.style.fontSize = "400%";
     } else {
-        feedbackEl.textContent = "CORRECT ANSWER!";
+        feedbackEl.textContent = "Correct!";
         feedbackEl.style.color = "green";
         feedbackEl.style.fontSize = "400%";            
     }
@@ -147,7 +147,7 @@ function saveHighscore() {
     }
 }
 
-function checkforEnter(event) {
+function checkForEnter(event) {
     // 13 = error key
     if (event.key === "Enter") {
         saveHighscore();
@@ -160,4 +160,6 @@ submitBtn.onclick = saveHighscore;
 // start quiz
 startBtn.onclick = startQuiz;
 
-initialsEl.onkeyup = checkforEnter;
+initialsEl.onkeyup = checkForEnter;
+
+// refresh to this point
