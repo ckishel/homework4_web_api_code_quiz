@@ -20,7 +20,7 @@ function startQuiz() {
     startScreenEl.setAttribute("class", "hide");
 
     // reveal questions
-    questions.El.removeAttribute("class");
+    questionsEl.removeAttribute("class");
 
     // begin timer
     timerId = setInterval(clockTick, 1000);
@@ -162,4 +162,4 @@ startBtn.onclick = startQuiz;
 
 initialsEl.onkeyup = checkForEnter;
 
-// refresh to this point
+// refresh to this
