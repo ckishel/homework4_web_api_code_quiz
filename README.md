@@ -26,7 +26,7 @@ THEN I can save my initials and my score
 
 ## Mock-Up
 
-A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over. My resulting homework submission is a bit more simplistic, with an interactive coding quiz, without the ability to save a high score or a timer. It is dynamic and has sections that respond dynamically to input. It is responsive to click events and and gets Element by ID. It does not have a timer or save the high score, but displays the functionality of a quiz application using javascript.
+A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
 
 This shows the quiz start.
 

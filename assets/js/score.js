@@ -14,8 +14,8 @@ function printHighscores(){
         var liTag = document.createElement("li");
         liTag.textContent = score.initials + " - " + score.score;
 
-        var olEl = document.getElementById("highscores");
-        olEl.appendChild(liTag);
+        var olElement = document.getElementById("highscores");
+        olElement.appendChild(liTag);
     });
 }
 
