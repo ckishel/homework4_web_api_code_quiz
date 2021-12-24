@@ -70,11 +70,11 @@ function questionClick() {
         }
         // time display update
         timerEl.textContent = time;
-        feedbackEl.textContent = "Wrong!";
+        feedbackEl.textContent = "Wrong Answer!";
         feedbackEl.style.color = "red";
         feedbackEl.style.fontSize = "400%";
     } else {
-        feedbackEl.textContent = "Correct!";
+        feedbackEl.textContent = "Correct Answer!";
         feedbackEl.style.color = "green";
         feedbackEl.style.fontSize = "400%";            
     }
