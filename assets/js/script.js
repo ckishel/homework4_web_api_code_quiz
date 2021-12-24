@@ -1,5 +1,3 @@
-
-
 // DOM
 var timerElement = document.querySelector("#time");
 var choicesElement = document.querySelector("#choices");
